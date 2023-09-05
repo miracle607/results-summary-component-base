@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:  hsl(0, 0%, 100%);
+}
+
+main{
+    /* border: 2px solid grey; */
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 3px;
+    display: flex;
+}
+
+.Your{
+    border: none;
+    height: 60vh;
+    width: 30%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column ;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px; 
+    color: white;
+    background-color: blue;
+}
+.visual > h1{
+    font-family: italic;
+    margin-bottom: 10px;
+    font-size: medium;
+}
+
+.visual{
+    border-radius: 30px;
+    height: 60vh;
+    width: 30%;
+    padding: 50px;
+    line-height: 50px;
+    background-color:  hsl(0, 0%, 100%);
+}
+
+.score{
+border: 1px solid black;
+height: 8rem;
+width: 8rem;
+border-radius: 100%;
+justify-content: center;
+align-items: center;
+background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(1, 1, 4, 0.2));
+border:none;
+display: flex;
+flex-direction: column;
+}
+
+
+.reaction-container{
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 2rem;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(253, 231, 234,0.5);
+}
+.reaction-container > div:first-child {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-around;
+    color: hsl(0, 100%, 67%);
+}
+.reaction-numbers{
+    font-size: .8rem;
+    padding-right: 20px;
+
+}
+
+.firstspan{
+    font-size: 15px;
+}
+
+.secondspan{
+    margin-left: 5px;
+    margin-right: 5px;
+    color: gray;
+}
+
+.thirdspan{
+font-size: smaller;
+color: gray;
+} 
+
+.memory-container{
+    /* border: 1px solid grey; */
+    border-radius: 10px;
+    margin-top: 15px;
+    height: 2rem;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: blanchedalmond;
+}
+
+.memory-container > div:first-child {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-around;
+    color: hsl(39, 100%, 56%);
+}
+
+.memory-numbers{
+     font-size: .8rem;
+    padding-right: 20px;
+}
+
+.verbalcontainer{
+    border: none;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 15px;
+    height: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(169, 85%, 79%);
+}
+
+.verbalcontainer > div:first-child{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-around;
+    color: hsl(166, 100%, 37%);
+}
+
+.verbalnumber{
+    font-size: .8rem;
+   padding-right: 20px;
+}
+
+button{
+    margin-top: 30px;
+    padding: .5rem 5rem;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+button:hover{
+   background-color: whitesmoke;
+}
+
+.visualcontainers{
+    border: none;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 10px;
+    height: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  hsl(231, 25%, 89%);
+    
+}
+.visualcontainers > div:first-child{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-around;
+    color: hsl(234, 85%, 45%);
+}
+.visualnumber{
+    font-size: .8rem;
+    padding-right: 20px;
+}
+
+@media only screen and (max-width: 500px){
+    main{
+        display: grid;
+        max-width: 90%;
+        min-height: 90vh;
+        justify-content: center;
+       align-items: center;
+       padding: 0px 15px;
+    }
+    
+    .Your{
+       width: 90vw;
+       
+    }
+
+    .reaction-container, .memory-container, .verbalcontainer, .visualcontainers, button{
+        width: 80vw;
+    }
+}
